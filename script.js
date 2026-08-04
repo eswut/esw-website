@@ -1,16 +1,1 @@
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
-
-navToggle.addEventListener("click", () => {
-  const isOpen = navMenu.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
-
-document.querySelectorAll(".nav-menu a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
+const navToggle=document.querySelector('.nav-toggle');const navMenu=document.querySelector('.nav-menu');function closeMenu(){navMenu.classList.remove('open');navToggle.classList.remove('open');navToggle.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open')}navToggle.addEventListener('click',()=>{const isOpen=navMenu.classList.toggle('open');navToggle.classList.toggle('open',isOpen);navToggle.setAttribute('aria-expanded',String(isOpen));document.body.classList.toggle('menu-open',isOpen)});document.querySelectorAll('.nav-menu a').forEach(link=>link.addEventListener('click',closeMenu));window.addEventListener('resize',()=>{if(window.innerWidth>960)closeMenu()});document.getElementById('year').textContent=new Date().getFullYear();

@@ -3,187 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official website for Engineers for a Sustainable World.">
-  <title>YEngineers for a Sustainable World</title>
+  <meta name="description" content="ESW at UT Austin — community, projects, and events.">
+  <meta name="theme-color" content="#87c99b">
+  <title>ESW at UT Austin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">Engineers for a Sustainable World</a>
-
-      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-        ☰
-      </button>
-
-      <nav class="nav-menu" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#events">Events</a>
-        <a href="#officers">Officers</a>
-        <a href="#join">Join</a>
-        <a href="#contact">Contact</a>
+    <div class="container nav-shell">
+      <a class="brand" href="#home"><span class="brand-mark">ESW</span><span class="brand-text">ESW at UT Austin</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="site-navigation" class="nav-menu" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#events">Events</a><a href="#officers">Officers</a><a href="#contact">Contact</a><a class="nav-join" href="#join">Join ESW</a>
       </nav>
     </div>
   </header>
-
-  <main>
+  <main id="main">
     <section id="home" class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">University of Texas at Austin</p>
-        <h1>Welcome to Engineers for a Sustainable World</h1>
-        <p class="hero-text">
-          A student-led community for people interested in your club's mission,
-          activities, and events.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#join">Join the Club</a>
-          <a class="button secondary" href="#events">View Events</a>
+      <div class="hero-shape hero-shape-one"></div><div class="hero-shape hero-shape-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Environmental & Social Impact</p>
+          <h1>Building a more sustainable future—together.</h1>
+          <p class="hero-lead">ESW at UT Austin brings students together through hands-on projects, professional development, service, and a shared commitment to sustainability.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#join">Become a member</a><a class="button button-ghost" href="#events">See upcoming events</a></div>
+          <div class="hero-stats"><div><strong>Open</strong><span>to all majors</span></div><div><strong>Student-led</strong><span>projects and events</span></div><div><strong>Impact</strong><span>on campus and beyond</span></div></div>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-label">Next general meeting</p><h2>Welcome Meeting</h2>
+          <div class="meeting-detail"><span class="detail-icon">↗</span><div><strong>Thursday, September 10</strong><span>6:00 PM · Replace with room</span></div></div>
+          <p>Meet the officer team, learn about current projects, and find your place in ESW.</p><a href="#events">View the full calendar →</a>
         </div>
       </div>
     </section>
-
     <section id="about" class="section">
-      <div class="container narrow">
-        <p class="section-label">About Us</p>
-        <h2>What we do</h2>
-        <p>
-          Replace this paragraph with a short description of your club. Explain
-          who can join, what the club does, and why students should get involved.
-        </p>
-
-        <div class="info-grid">
-          <article class="card">
-            <h3>Meetings</h3>
-            <p>Thursdays at 6:00 PM</p>
-            <p>Student Center, Room 204</p>
-          </article>
-
-          <article class="card">
-            <h3>Membership</h3>
-            <p>Open to all currently enrolled students.</p>
-          </article>
-
-          <article class="card">
-            <h3>Activities</h3>
-            <p>Workshops, social events, guest speakers, and community projects.</p>
-          </article>
-        </div>
+      <div class="container split-layout"><div><p class="section-kicker">Who we are</p><h2>Ideas become impact when people build them together.</h2></div><div class="body-copy"><p>Replace this text with the official ESW mission. Explain the club’s purpose, who can participate, and what members gain from joining.</p><p>You can also mention community partnerships, sustainability goals, workshops, technical projects, networking, and social events.</p></div></div>
+      <div class="container feature-grid"><article class="feature-card"><span class="feature-number">01</span><h3>Hands-on projects</h3><p>Collaborate on meaningful projects that address environmental and community needs.</p></article><article class="feature-card"><span class="feature-number">02</span><h3>Professional growth</h3><p>Build leadership skills, meet professionals, and learn from other students.</p></article><article class="feature-card"><span class="feature-number">03</span><h3>Community</h3><p>Connect with students who care about sustainability, service, and practical change.</p></article></div>
+    </section>
+    <section id="projects" class="section section-soft">
+      <div class="container section-heading"><div><p class="section-kicker">Current work</p><h2>Projects with purpose</h2></div><p>Replace these examples with your club’s current project teams.</p></div>
+      <div class="container project-grid"><article class="project-card project-card-large"><div class="project-tag">Featured project</div><h3>Campus Sustainability Initiative</h3><p>Add a short description of the project, the problem it addresses, and how members can contribute.</p><a href="#join">Join this project →</a></article><article class="project-card"><div class="project-tag">Community</div><h3>Local Partnership</h3><p>Describe a service or outreach project here.</p></article><article class="project-card"><div class="project-tag">Education</div><h3>Workshop Series</h3><p>Describe workshops, speaker events, or technical training here.</p></article></div>
+    </section>
+    <section id="events" class="section">
+      <div class="container section-heading"><div><p class="section-kicker">Calendar</p><h2>Upcoming events</h2></div><p>Update these cards each semester or link the button to a shared calendar.</p></div>
+      <div class="container events-layout"><div class="events-list">
+        <article class="event-card"><time datetime="2026-09-10"><span>SEP</span><strong>10</strong></time><div class="event-copy"><div class="event-meta">General Meeting · 6:00 PM</div><h3>Fall Welcome Meeting</h3><p>Meet the officers, hear about projects, and learn how to join.</p></div><span class="event-arrow">→</span></article>
+        <article class="event-card"><time datetime="2026-09-24"><span>SEP</span><strong>24</strong></time><div class="event-copy"><div class="event-meta">Workshop · 6:00 PM</div><h3>Sustainability Skills Night</h3><p>Replace this description with your workshop details.</p></div><span class="event-arrow">→</span></article>
+        <article class="event-card"><time datetime="2026-10-08"><span>OCT</span><strong>08</strong></time><div class="event-copy"><div class="event-meta">Speaker Event · 6:30 PM</div><h3>Industry and Impact Panel</h3><p>Replace this description with speaker and location information.</p></div><span class="event-arrow">→</span></article>
+      </div><aside class="calendar-card"><p class="calendar-label">Stay updated</p><h3>Add the ESW calendar</h3><p>Replace the button link with your public Google Calendar, Outlook calendar, or university events page.</p><a class="button button-primary button-full" href="#">Open full calendar</a></aside></div>
+    </section>
+    <section id="officers" class="section section-dark">
+      <div class="container section-heading light-heading"><div><p class="section-kicker">Leadership</p><h2>Meet the officer team</h2></div><p>Replace initials with photos later, or keep the simple illustrated style.</p></div>
+      <div class="container officer-grid">
+        <article class="officer-card"><div class="officer-avatar">CP</div><h3>Co-President Name</h3><p>Co-President</p></article>
+        <article class="officer-card"><div class="officer-avatar">CP</div><h3>Co-President Name</h3><p>Co-President</p></article>
+        <article class="officer-card"><div class="officer-avatar">VI</div><h3>Officer Name</h3><p>VP Internal</p></article>
+        <article class="officer-card"><div class="officer-avatar">VE</div><h3>Officer Name</h3><p>VP External</p></article>
+        <article class="officer-card"><div class="officer-avatar">VP</div><h3>Officer Name</h3><p>VP Projects</p></article>
+        <article class="officer-card"><div class="officer-avatar">TR</div><h3>Officer Name</h3><p>Treasurer</p></article>
+        <article class="officer-card"><div class="officer-avatar">SC</div><h3>Officer Name</h3><p>Secretary</p></article>
       </div>
     </section>
-
-    <section id="events" class="section alt">
-      <div class="container">
-        <p class="section-label">Upcoming Events</p>
-        <h2>What’s happening</h2>
-
-        <div class="event-list">
-          <article class="event-card">
-            <div class="event-date">
-              <span class="month">SEP</span>
-              <span class="day">10</span>
-            </div>
-            <div>
-              <h3>Fall Welcome Meeting</h3>
-              <p>6:00 PM · Student Center, Room 204</p>
-              <p>Meet the officers, learn about the club, and grab some food.</p>
-            </div>
-          </article>
-
-          <article class="event-card">
-            <div class="event-date">
-              <span class="month">SEP</span>
-              <span class="day">24</span>
-            </div>
-            <div>
-              <h3>Club Workshop</h3>
-              <p>6:00 PM · Engineering Building, Room 110</p>
-              <p>Replace this with details about your next workshop or activity.</p>
-            </div>
-          </article>
-
-          <article class="event-card">
-            <div class="event-date">
-              <span class="month">OCT</span>
-              <span class="day">08</span>
-            </div>
-            <div>
-              <h3>Guest Speaker Night</h3>
-              <p>6:30 PM · Library Auditorium</p>
-              <p>Replace this with information about your speaker or special event.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="officers" class="section">
-      <div class="container">
-        <p class="section-label">Leadership</p>
-        <h2>Meet the officers</h2>
-
-        <div class="officer-grid">
-          <article class="officer-card">
-            <div class="avatar">P</div>
-            <h3>Andy Amaro & Sydnee Strohm</h3>
-            <p>Co-Presidents</p>
-          </article>
-
-          <article class="officer-card">
-            <div class="avatar">V</div>
-            <h3>Vice President Name</h3>
-            <p>Vice President</p>
-          </article>
-
-          <article class="officer-card">
-            <div class="avatar">T</div>
-            <h3>Zachary Thibodeaux</h3>
-            <p>Treasurer</p>
-          </article>
-
-          <article class="officer-card">
-            <div class="avatar">S</div>
-            <h3>Jaela Barrera</h3>
-            <p>Secretary</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="join" class="section join-section">
-      <div class="container narrow center">
-        <p class="section-label">Get Involved</p>
-        <h2>Join the club</h2>
-        <p>
-          Replace the link below with your Google Form, university organization
-          page, Discord invitation, or other membership form.
-        </p>
-        <a class="button primary" href="https://forms.google.com" target="_blank" rel="noopener">
-          Membership Form
-        </a>
-      </div>
-    </section>
-
-    <section id="contact" class="section alt">
-      <div class="container narrow center">
-        <p class="section-label">Contact</p>
-        <h2>Stay connected</h2>
-        <p>Email: <a href="mailto:yourclub@example.edu">yourclub@example.edu</a></p>
-        <div class="social-links">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="Discord">Discord</a>
-          <a href="#" aria-label="University page">University Page</a>
-        </div>
-      </div>
-    </section>
+    <section id="join" class="section join-section"><div class="container join-card"><div><p class="section-kicker">Join ESW</p><h2>There’s a place for you here.</h2><p>No prior experience is required. Replace this text with your actual membership process and meeting expectations.</p></div><div class="join-actions"><a class="button button-primary" href="https://forms.google.com">Membership form</a><a class="button button-ghost" href="mailto:yourclub@example.edu">Email the officers</a></div></div></section>
+    <section id="contact" class="section contact-section"><div class="container contact-grid"><div><p class="section-kicker">Contact</p><h2>Keep up with ESW</h2></div><div class="contact-links"><a href="mailto:yourclub@example.edu"><span>Email</span><strong>yourclub@example.edu</strong></a><a href="#"><span>Instagram</span><strong>@yourhandle</strong></a><a href="#"><span>LinkedIn</span><strong>ESW at UT Austin</strong></a></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Engineers for a Sustainable World </p>
-      <p>Built by students.</p>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="container footer-shell"><a class="brand footer-brand" href="#home"><span class="brand-mark">ESW</span><span class="brand-text">ESW at UT Austin</span></a><p>© <span id="year"></span> ESW at UT Austin. Built by students.</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
