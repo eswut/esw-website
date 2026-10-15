@@ -1113,3 +1113,58 @@ p {
   }
 
 }
+
+/* =========================================
+   ABOUT SECTION - LOGO LEFT, TEXT RIGHT
+   ========================================= */
+
+.about-section .section-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.about-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-logo {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 0;
+}
+
+.about-content h2 {
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.about-content .section-description {
+  max-width: 550px;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 768px) {
+
+  .about-section .section-intro {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-logo {
+    max-width: 300px;
+  }
+
+  .about-content h2 {
+    font-size: clamp(2.3rem, 7vw, 3.5rem);
+  }
+
+}
