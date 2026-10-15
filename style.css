@@ -1190,3 +1190,67 @@ p {
     font-size: clamp(2.2rem, 7vw, 3.5rem);
   }
 }
+
+/* =========================================
+   ABOUT SECTION - FINAL ALIGNMENT
+   ========================================= */
+
+.about-section {
+  padding: 5rem 0;
+}
+
+.about-section .section-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+/* Center logo in left column */
+.about-section .about-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo size */
+.about-section .about-logo {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Right column */
+.about-section .about-content {
+  min-width: 0;
+}
+
+.about-section .about-content h2 {
+  font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+  line-height: 1.12;
+  margin-bottom: 1.5rem;
+}
+
+.about-section .about-content .section-description {
+  font-size: 1.05rem;
+  max-width: 550px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-section .section-intro {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-section .about-logo {
+    max-width: 260px;
+  }
+
+  .about-section .about-content h2 {
+    font-size: 2.5rem;
+  }
+}
