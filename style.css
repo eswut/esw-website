@@ -1114,57 +1114,69 @@ p {
 
 }
 
+
 /* =========================================
-   ABOUT SECTION - LOGO LEFT, TEXT RIGHT
+   ABOUT SECTION - CORRECTED LAYOUT
    ========================================= */
+
+.about-section {
+  padding: 6rem 0;
+  overflow: hidden;
+}
 
 .about-section .section-intro {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
-  gap: 5rem;
-  margin-bottom: 3rem;
+  gap: 4rem;
+  margin-bottom: 4rem;
 }
 
 .about-logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
 }
 
-.about-logo {
+.about-logo-container .about-logo {
   display: block;
   width: 100%;
-  max-width: 450px;
+  max-width: 380px;
   height: auto;
   margin: 0;
+  object-fit: contain;
+}
+
+.about-content {
+  min-width: 0;
 }
 
 .about-content h2 {
-  font-size: clamp(2.5rem, 4vw, 4.5rem);
-  line-height: 1.1;
-  margin-bottom: 2rem;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.12;
+  margin-bottom: 1.5rem;
 }
 
 .about-content .section-description {
   max-width: 550px;
+  font-size: 1.05rem;
 }
 
-/* MOBILE LAYOUT */
+/* TABLET AND MOBILE */
 
 @media (max-width: 768px) {
-
   .about-section .section-intro {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
-  .about-logo {
-    max-width: 300px;
+  .about-logo-container .about-logo {
+    max-width: 280px;
   }
 
   .about-content h2 {
-    font-size: clamp(2.3rem, 7vw, 3.5rem);
+    font-size: clamp(2.2rem, 7vw, 3.5rem);
   }
-
 }
+
