@@ -1116,67 +1116,77 @@ p {
 
 
 /* =========================================
-   ABOUT SECTION - CORRECTED LAYOUT
+   ABOUT SECTION - SIZE AND ALIGNMENT FIX
    ========================================= */
 
 .about-section {
-  padding: 6rem 0;
+  padding: 5rem 0;
   overflow: hidden;
 }
 
+/* Keep content inside the website width */
+.about-section .container {
+  width: min(calc(100% - 3rem), 1240px);
+  margin-inline: auto;
+}
+
+/* Two balanced columns */
 .about-section .section-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   gap: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-.about-logo-container {
+/* Logo container */
+.about-section .about-logo-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-width: 0;
 }
 
-.about-logo-container .about-logo {
+/* Force logo to a reasonable size */
+.about-section .about-logo-container img {
   display: block;
   width: 100%;
-  max-width: 380px;
+  max-width: 320px;
   height: auto;
-  margin: 0;
+  max-height: 320px;
   object-fit: contain;
+  margin: 0;
 }
 
-.about-content {
+/* Right side text */
+.about-section .about-content {
   min-width: 0;
 }
 
-.about-content h2 {
+.about-section .about-content h2 {
   font-size: clamp(2.5rem, 4vw, 4rem);
-  line-height: 1.12;
+  line-height: 1.1;
   margin-bottom: 1.5rem;
 }
 
-.about-content .section-description {
+.about-section .about-content .section-description {
   max-width: 550px;
   font-size: 1.05rem;
 }
 
-/* TABLET AND MOBILE */
-
+/* Mobile */
 @media (max-width: 768px) {
   .about-section .section-intro {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
-  .about-logo-container .about-logo {
-    max-width: 280px;
+  .about-section .about-logo-container img {
+    max-width: 260px;
+    max-height: 260px;
   }
 
-  .about-content h2 {
+  .about-section .about-content h2 {
     font-size: clamp(2.2rem, 7vw, 3.5rem);
   }
 }
-
